@@ -33,7 +33,7 @@ def main():
         if choice == '1' or choice == '2' or choice == '3' or choice == '4':
             choice_bool = True
         else:
-                print("Cannot be worked out")
+            print("Cannot be worked out")
 
         if choice_bool:
 
@@ -74,12 +74,20 @@ def main():
             elif choice == '4':
                 print(num1,"/",num2,"=", divide(num1,num2))
 
-            a = input("Enter yes/no to carry on using the calculator")
-            if a == "yes":
-                            continue
-            elif a == "no":
-                            break
-            else:
-                print("Enter either yes/no")
+            #create a boolean outside of the 'while' loop to control exit from the loop
+
+            #enter the 'while' loop
+            #START 'while'
+
+            #read user input
+            a = input("Enter yes/no to carry on using the calculator (y/yes/n/no) ")
+
+            #check the input; change the boolean controlling the 'while' loop accordingly
+
+
+            #END 'while'
+
+            if a == "yes" or a == "y":
+                main()
 
 main()
