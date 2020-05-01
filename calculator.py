@@ -19,6 +19,8 @@ def main():
         except ValueError:
             return False
 
+    #Start your main loop here
+
     choice_bool = False
 
     print("Select What you want to do Calculator made by filip.")
