@@ -75,15 +75,19 @@ def main():
                 print(num1,"/",num2,"=", divide(num1,num2))
 
             #create a boolean outside of the 'while' loop to control exit from the loop
-
-            #enter the 'while' loop
+            carryOn_correct= False
+ 
+            #enter the 'while' loop 
             #START 'while'
+            while(not carryOn_correct):
 
-            #read user input
-            a = input("Enter yes/no to carry on using the calculator (y/yes/n/no) ")
+                #read user input
+                a = input("Enter yes/no to carry on using the calculator (y/yes/n/no) ")
 
-            #check the input; change the boolean controlling the 'while' loop accordingly
-
+                #check the input; change the boolean controlling the 'while' loop accordingly
+                if a == 'y' or a == 'yes' or a == 'n' or a == 'no':
+                    carryOn_correct = True
+                    #pass
 
             #END 'while'
 
